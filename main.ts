@@ -7,7 +7,7 @@
 /**
  * MP3Player_WT2003M02 MP3语音提示模块软件包
  */
-//% weight=100 color=#55F343 icon="/uf001"
+//% weight=100 color=#DE6D10 icon=""
 namespace MP3Player_WT2003M02 {
     let i2cAddr: number = 0x33 // 0x01  I2C TO UART 默认地址
     let tx = 0, rx = 0   // tx,rx 端口
@@ -23,7 +23,7 @@ namespace MP3Player_WT2003M02 {
         checksum = checksum & 0xFF
         cmdBuf[cmdBuf.length - 2] = checksum;
     }
-
+    
     // 发送命令
     // 注意：“ 长度” 是指长度+命令码+参数+校验和的长度，
     function SendCmd(cmd: number, args: Buffer): number {
