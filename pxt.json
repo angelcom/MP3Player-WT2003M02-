@@ -1,6 +1,6 @@
 {
     "name": "Mp3Player_WT2003M02",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Mp3Player With WT2003M02 for i2c and uart",
     "license": "MIT",
     "dependencies": {
